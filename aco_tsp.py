@@ -19,7 +19,7 @@ class AntColony(object):
             ant_colony = AntColony(german_distances, 100,
                                    20, 2000, 0.95, alpha=1, beta=2)
         """
-        self.distances = distances
+        self.distances = distances  # matrice nxn
         self.pheromone = np.ones(self.distances.shape) / len(distances)
         self.all_inds = range(len(distances))
         self.n_ants = n_ants
